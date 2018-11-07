@@ -138,6 +138,7 @@ body{
     display: flex;
     position: relative;
     height: 100vh;
+    /*ele n está ficando um do lado do outro, alguns cards estão descendo*/
 }
 
 /* .conteudo-topico{
@@ -163,6 +164,8 @@ body{
 .card>p{
     text-align: justify;
     margin: 50px;
+    font-family: Asap-medio;
+    font-size: 18px;
 
 }
 
