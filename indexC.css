@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Aller-bold';
-    src: url(assets/fonts/aller_bd-webfont.woff ) format('woff');
+    src: url("assets/fonts/aller_bd-webfont.woff" ) format('woff');
 }
 
 @font-face{
@@ -58,86 +58,9 @@
     src: url(assets/fonts/asap-semibold-webfont.woff) format('woff');
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
+:root {
+    --padding-padrao: 10px;
 }
-
-
-/* css da nav bar */
-
-.barra{
-    display: flex;
-    background-color: none;
-    width: 100vw;
-    height: 8vh;
-    justify-content: center;
-    text-decoration: none;
-    /* position: fixed; */
-    align-items: center;
-}
-
-.navegador{
-    display: flex;
-    background-color: rgb(124, 124, 124);
-    width: 100vw;
-    height: 8vh;
-    justify-content: center;
-    text-decoration: none;
-    position: fixed;
-    align-items: center;
-}
-
-.logo{
-    width: 13vw;
-    margin: 0 20px;
-}
-
-.lista{
-    justify-content: center;
-    list-style-type: none;
-    width: 100vw;
-    display: flex;
-}
-
-.item-lista{
-    display: flex;
-    
-}
-
-.link{
-    font-family: aller-regular;
-    width: 12vw;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    background-color: #74747400;
-    margin: 7px;
-    padding: 7px;
-    border: 3px solid black;
-    border-radius: 50px;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    transition: 400ms;
-}
-
-.link:hover{
-    width: 14vw;
-    height: 39px;
-    transition: 200ms;
-    font-size: 17px;    
-    background-color: white;
-    color: black;
-    border: 3px solid white;
-    box-shadow: 0 0 20px white;
-}
-
-/* css da nav bar */
-
 
 *{
     margin: 0;
@@ -145,9 +68,7 @@
     box-sizing: border-box;
     
 }
-
-/* css da parte 1 */
-
+/* ----- PARTE 1 ----------------------------------------- */
 .parte-1{
     background: linear-gradient(135deg, #215caa, #7a60c5);
     padding-top: var(--padding-padrao);
@@ -354,185 +275,10 @@
     filter: alpha(opacity=10);
 }
 
-/* css da parte 1 */
+/* ----- PARTE 2 ------------------------------- */
 
 
-
-/* css da parte 2 */
-
-.parte-2{
-    background: linear-gradient(135deg, #8360c8, #8e186e );
-}
-
-.titulo-marca{
-    color: white;
-    text-align: center;
-    font-family: "Aller-bold";
-    font-size: 60px;
-    padding: 15px;
-    width: 100%;
-}
-
-.borda{
-    border: 3px solid white;
-}
-
-.parte-2-grupo1{
-    display: inline-block;
-    padding: 0 50px;
-}
-
-.parte-2-grupo1>h2{
-    font-family: "Aller-bold";
-    font-size: 30px;
-    padding: 15px;
-    color: white;
-}
-
-.parte-2-grupo1>p{
-    font-family: "Aller-regular";
-    font-size: 25px;
-    margin: 10px;
-    color: white;
-}
-
-.parte-2-grupo2{
-    display: flex;
-    align-items: center;
-    padding: 50px;
-}
-
-.parte-2-grupo2>div{
-    width: 50%;
-    display: inline-block;
-}
-
-.parte-2-grupo2>div>h2{
-    font-family: "Aller-bold";
-    font-size: 30px;
-    padding: 15px;
-    color: white;
-}
-
-.parte-2-grupo2>div>p{
-    font-family: "Aller-regular";
-    font-size: 25px;
-    margin: 10px;
-    color: white;
-}
-
-.logo-grid{
-    display: inline-block;
-    padding: 0 0 0 100px;
-    width: 600px
-}
-
-.parte-2-grupo3{
-    display: flex;
-    align-items: center;
-}
-
-.parte-2-grupo3>div{
-    display: inline-block;
-    width: 50%;
-    padding: 50px;
-}
-
-.parte-2-grupo3>div>h2{
-    font-family: "Aller-bold";
-    font-size: 30px;
-    padding: 15px;
-    height: 100%;
-    color: white;
-}
-
-.parte-2-grupo3>div>p{
-    width: 100%;
-    font-family: "Aller-regular";
-    font-size: 25px;
-    margin: 15px;
-    height: 100%;
-    color: white;
-}
-
-.variacoes-marca{
-    display: inline-block;
-    padding: 0 0 0 100px;
-    width: 600px
-
-}
-
-.parte-2-grupo4{
-    display: flex;
-    align-items: center;
-}
-
-.parte-2-grupo4>div{
-    display: inline-block;
-    width: 50%;
-    padding: 50px;
-}
-
-.parte-2-grupo4>div>h2{
-    font-family: "Aller-bold";
-    font-size: 30px;
-    padding: 15px;
-    height: 100%;
-    color: white;
-}
-
-.parte-2-grupo4>div>p{
-    width: 100%;
-    font-family: "Aller-regular";
-    font-size: 25px;
-    margin: 15px;
-    height: 100%;
-    color: white;
-}
-
-.area-de-protecao{
-    display: inline-block;
-    padding: 70px 0 70px 170px;
-    width: 500px
-}
-
-.parte-2-grupo5{
-    display: flex;
-    align-items: center;
-}
-
-.parte-2-grupo5>div{
-    display: inline-block;
-    width: 50%;
-    padding: 50px;
-}
-
-.parte-2-grupo5>div>h2{
-    font-family: "Aller-bold";
-    font-size: 30px;
-    padding: 15px;
-    height: 100%;
-    color: white;
-}
-
-.parte-2-grupo5>div>p{
-    width: 100%;
-    font-family: "Aller-regular";
-    font-size: 25px;
-    margin: 15px;
-    height: 100%;
-    color: white;
-}
-
-.limite-reducao{
-    display: inline-block;
-    padding: 70px 0 70px 170px;
-    width: 500px
-}
-
-/* css da parte 2 */
-
-/* css da parte 3 */
+/* -------- PARTE 3 ------------------------------- */
 
 .parte-3{
     background: linear-gradient(135deg, #8e186e, #ff7376);
@@ -654,48 +400,9 @@
     display: block;
 } 
 
-/* css da parte 3 */
+/* ----- PARTE 4 ------------------------------- */
 
-/* css da parte 4 */
-
-.parte-4{
-    background: linear-gradient(135deg,#ff7376, #ffd6a2);
-}
-
-.parte-4>h1{
-    text-align: center;
-    font-family: Aller-bold;
-    font-size: 60px;
-    padding: 15px;
-    color: white;
-
-}
-
-.parte-4-grupo1{
-    width: 100%;
-    padding: 50px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-}
-
-.parte-4-grupo1>h1{
-    text-align: center;
-    width: 100vw;
-    font-family: Aller-bold;
-    font-size: 30px;
-    padding: 15px;
-    color: white;
-}
-
-.parte-4-grupo1>img{
-    height: 500px;
-}
-
-
-/* css da parte 4 */
-
-/* css da parte 5 */
+/* ----- PARTE 5 ------------------------------- */
 
 .parte-5{
     background: linear-gradient(135deg,#48c0b6, #215caa);
@@ -748,10 +455,3 @@
     opacity: 0.1;
     filter: alpha(opacity=10);
 }
-
-/* css da parte 5 */
-
-
-
-
-
