@@ -70,7 +70,7 @@
 .barra{
     display: flex;
     background-color: none;
-    width: 100vw;
+    width: 98vw;
     height: 8vh;
     justify-content: center;
     text-decoration: none;
@@ -80,13 +80,14 @@
 
 .navegador{
     display: flex;
-    background-color: rgb(124, 124, 124);
-    width: 100vw;
+    background: linear-gradient(180deg, #000000, #ffffff00);
+    width: 100%; 
     height: 8vh;
     justify-content: center;
     text-decoration: none;
     position: fixed;
     align-items: center;
+    z-index: 3;
 }
 
 .logo{
@@ -117,10 +118,10 @@
     background-color: #74747400;
     margin: 7px;
     padding: 7px;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 50px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 14px;
     transition: 400ms;
 }
@@ -132,8 +133,11 @@
     font-size: 17px;    
     background-color: white;
     color: black;
-    border: 3px solid white;
-    box-shadow: 0 0 20px white;
+    /* box-shadow: 0 0 20px white; */
+}
+
+.barra{
+    
 }
 
 /* css da nav bar */
@@ -177,12 +181,12 @@
 .parte1-grupo1 {
     display: flex;
     width: 90vw;
-    margin: 40px auto;
+    margin: 0px auto;
 }
 .parte1-grupo2{
     display: flex;
     width: 90vw;
-    margin: 50px auto;
+    margin: 0px auto;
 }
 .quem-funciona, .usar-fazer{
     border: 5px solid white;
@@ -213,7 +217,7 @@
 .parte1-grupo3{
     display: flex;
     width: 90vw;
-    margin: 50px auto;
+    margin: 0px auto;
 }
 .valores{
     border: 5px solid white;
@@ -266,7 +270,7 @@
 .parte1-grupo4{
     display: flex;
     width: 90vw;
-    margin: 50px auto;
+    margin: 0px auto;
 }
 .diretores{
     border: 5px solid white;
@@ -303,7 +307,7 @@
 }
 .agacy, .juliana, .erisson, .carol{
     display: inline-block;
-    padding: 5%;
+    padding: 2%;
 }
 .agacy > .nome{
     display: block;
@@ -543,7 +547,7 @@
     display: flex;
     width: 90vw;
     height: 500px;
-    margin: 40px auto;
+    margin: 0 auto;
     border: 5px solid white;
     background-image: url(./assets/images/ondas\ com\ fundo\ transparente.png);
 
@@ -624,7 +628,7 @@
 .parte3-grupo4{
     display: flex;
     width: 90vw;
-    margin: 40px auto;
+    margin: 0 auto;
     border: 5px solid white;
 
 }
@@ -674,14 +678,15 @@
 .parte-4-grupo1{
     width: 100%;
     padding: 50px;
-    /* display: flex;
+    text-align: center;
+    /* displ0ay: flex;
     align-items: center;
     justify-content: center; */
 }
 
 .parte-4-grupo1>h1{
     text-align: center;
-    width: 100vw;
+    width: 100%;
     font-family: Aller-bold;
     font-size: 30px;
     padding: 15px;
@@ -707,7 +712,7 @@
     display: flex;
     width: 90vw;
     height: 600px;
-    margin: 40px auto;
+    margin: 0 auto;
 }
 .titulo-sound{
     width: 100%;
@@ -727,7 +732,7 @@
     display: flex;
     width: 90vw;
     height: 600px;
-    margin: 40px auto;
+    margin: 0px auto;
 }
 .textinho{
     width: 100%;
