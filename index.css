@@ -717,7 +717,7 @@
 
 }
 .elementos{
-    width: 100%;
+    width: 90vw;
     padding: 50px;
     display: flex;
     align-items: center;
@@ -758,7 +758,6 @@
     display: flex;
     width: 90vw;
     margin: 40px auto;
-    border: 5px solid white;
 
 }
 .texto, .exemplo-cores{
@@ -825,9 +824,22 @@
 /* css da parte 4 */
 
 .parte-4{
-    background: linear-gradient(135deg,#ff7376, #ffd6a2);
+    background: linear-gradient(180deg,#8e186e, #ff7376);
 }
-
+.aplicacoes{
+    width: 90vw;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aplicacoes > h1{
+    font-family: "Aller-bold";
+    font-size: 60px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
 .parte-4>h1{
     text-align: center;
     font-family: Aller-bold;
@@ -836,14 +848,13 @@
     color: white;
 
 }
-
 .parte-4-grupo1{
-    width: 100%;
+    width: 90vw;
     padding: 50px;
     text-align: center;
-    /* displ0ay: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    flex-wrap: wrap;
 }
 
 .parte-4-grupo1>h1{
@@ -853,23 +864,17 @@
     font-size: 30px;
     padding: 15px;
     color: white;
+    margin-block-end: 5%;
 }
 
 .parte-4-grupo1>img{
-    height: 500px;
+    align-self: auto;
 }
 
 
 /* css da parte 4 */
 
 /* css da parte 5 */
-
-.parte-5{
-    background: linear-gradient(135deg,#48c0b6, #215caa);
-    padding-top: var(--padding-padrao);
-    padding-bottom: var(--padding-padrao); 
-
-}
 .parte5-grupo1 {
     display: flex;
     width: 90vw;
