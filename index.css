@@ -883,12 +883,7 @@
 /* css da parte 4 */
 
 /* css da parte 5 */
-.parte5-grupo1 {
-    display: flex;
-    width: 90vw;
-    height: 600px;
-    margin: 0 auto;
-}
+
 .titulo-sound{
     background-image: url(./assets/images/ONDAS\ 2.png);
     width: 100%;
