@@ -832,14 +832,16 @@
 .parte-4{
     background: linear-gradient(180deg,#8e186e, #ff7376);
 }
-.aplicacoes{
-    width: 90vw;
+.titulo-aplicacoes{
+    background-image: url(./assets/images/ONDAS\ 2.png);
+    width: 100%;
+    height: 900px;
     padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.aplicacoes > h1{
+.titulo-aplicacoes > h1{
     font-family: "Aller-bold";
     font-size: 60px;
     padding: 15px;
@@ -887,14 +889,16 @@
     height: 600px;
     margin: 0 auto;
 }
-.titulo-secao{
+.titulo-sound{
+    background-image: url(./assets/images/ONDAS\ 2.png);
     width: 100%;
+    height: 900px;
     padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.titulo-secao > h1{
+.titulo-sound > h1{
     font-family: "Aller-bold";
     font-size: 60px;
     padding: 15px;
