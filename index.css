@@ -151,14 +151,49 @@
 }
 
 /* css da parte 1 */
-
+.branding{
+    height: 100vh;
+    background-image: -moz-linear-gradient( 90deg, rgba(74,192,182, 1), rgba(74,192,182,0));
+    background-image: -webkit-linear-gradient( 90deg, rgba(74,192,182, 1), rgba(74,192,182,0));
+}
 .parte-1{
-    background: linear-gradient(135deg, #215caa, #7a60c5);
+    background: linear-gradient(180deg, #48c0b6, #215caa);
     padding-top: var(--padding-padrao);
-    padding-bottom: var(--padding-padrao); 
+    padding-bottom: var(--padding-padrao);
+
+}
+.video{
+    width: 100vw;
+    height: 900px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+	width: auto;
+	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+    z-index: -1;
+}
+.titulo-branding{
+    color: white;
+    position: absolute;
+    align-self: center;
+    font-family: "Aller-bold";
+    font-size: 60px;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+.paragrafo{
+    color: white;
+    font-family: "Aller-regular";
+    font-size: 25px;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
 }
 .oque-somos, .gif{
-    border: 5px solid white;
     color: white;
     padding: 50px;
     width: 50%;
@@ -183,51 +218,19 @@
     width: 90vw;
     margin: 0px auto;
 }
-.parte1-grupo2{
-    display: flex;
-    width: 90vw;
-    margin: 0px auto;
-}
-.quem-funciona, .usar-fazer{
-    border: 5px solid white;
-    color: white;
-    padding: 50px;
-    width: 50%;
-}
-.quem-funciona > h1{
-    font-family: "Aller-bold";
-    font-size: 50px;
-    padding: 15px;
-}
-.quem-funciona > p{
-    font-family: "Aller-italico";
-    font-size: 25px;
-    margin: 15px;
-}
-.usar-fazer > h1{
-    font-family: "Aller-bold";
-    font-size: 50px;
-    padding: 15px;
-}
-.usar-fazer > p{
-    font-family: "Aller-italico";
-    font-size: 25px;
-    margin: 15px;
-}
 .parte1-grupo3{
     display: flex;
     width: 90vw;
     margin: 0px auto;
 }
 .valores{
-    border: 5px solid white;
     color: white;
     padding: 50px;
     width: 100%;
 }
 .valores > h1{
     font-family: "Aller-bold";
-    font-size: 60px;
+    font-size: 50px;
     padding: 15px;
     text-align: center;
 }
@@ -273,7 +276,6 @@
     margin: 0px auto;
 }
 .diretores{
-    border: 5px solid white;
     color: white;
     padding: 50px;
     width: 100%;
@@ -308,6 +310,9 @@
 .agacy, .juliana, .erisson, .carol{
     display: inline-block;
     padding: 2%;
+    margin: 33px;
+    transition: 400ms;
+    border-radius: 20px;
 }
 .agacy > .nome{
     display: block;
@@ -315,7 +320,15 @@
     font-family: "Aller-bold";
 
 }
-.agacy > .link{
+.agacy:hover, .juliana:hover, .erisson:hover, .carol:hover{
+    border-radius: 20px;
+    background: #d3d3d3;
+    color: black;
+    transform: scale(1.1);
+    transition: 200ms;
+}
+.agacy > .arroba{
+    margin: 0.01;
     display: block;
     text-align: center;
     font-family: "Aller-italico";
@@ -325,7 +338,7 @@
     text-align: center;
     font-family: "Aller-bold";
 }
-.erisson > .link{
+.erisson > .arroba{
     display: block;
     text-align: center;
     font-family: "Aller-italico";
@@ -335,7 +348,7 @@
     text-align: center;
     font-family: "Aller-bold";
 }
-.juliana > .link{
+.juliana > .arroba{
     display: block;
     text-align: center;
     font-family: "Aller-italico";
@@ -345,17 +358,10 @@
     text-align: center;
     font-family: "Aller-bold";
 }
-.carol > .link{
+.carol > .arroba{
     display: block;
     text-align: center;
     font-family: "Aller-italico";
-}
-.fundo{
-    position: absolute;
-    width: 100%;
-    height: 10;
-    opacity: 0.1;
-    filter: alpha(opacity=10);
 }
 
 /* css da parte 1 */
@@ -365,75 +371,210 @@
 /* css da parte 2 */
 
 .parte-2{
-    background: linear-gradient(135deg, #8360c8, #8e186e );
+    background: linear-gradient(180deg,#215caa, #8360c8 );
 }
 
 .titulo-marca{
-    color: white;
-    text-align: center;
+    width: 100%;
+    height: 900px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(./assets/images/ondas\ com\ fundo\ transparente.png) */
+}
+.titulo-marca > h1{
     font-family: "Aller-bold";
     font-size: 60px;
     padding: 15px;
-    width: 100%;
+    color: white;
 }
-
-.borda{
-    border: 3px solid white;
-}
-
 .parte-2-grupo1{
-    display: inline-block;
-    padding: 0 50px;
+    padding-left: 120px;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .parte-2-grupo1>h2{
     font-family: "Aller-bold";
     font-size: 30px;
-    padding: 15px;
+    margin: 15px;
     color: white;
 }
 
 .parte-2-grupo1>p{
     font-family: "Aller-regular";
     font-size: 25px;
-    margin: 10px;
+    margin: 15px;
     color: white;
 }
 
 .parte-2-grupo2{
-    display: flex;
-    align-items: center;
     padding: 50px;
 }
-
-.parte-2-grupo2>div{
-    width: 50%;
+.construcao-itens{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+.braile{
     display: inline-block;
+    padding: 2%;
+    margin: 33px;
+    transition: 400ms;
+    border-radius: 20px;
+    background-color: teal;
+    width: 23%;
+    height: 100%;
+}
+.braile-titulo{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-family: "Aller-bold";
+}
+.braile > img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.braile:hover{
+    border-radius: 20px;
+    background: #d3d3d3;
+    color: black;
+    transform: scale(1.1);
+    transition: 200ms;
+}
+.braile-p{
+    display: block;
+    text-align: center;
+    font-family: "Aller-regular";
+}
+.ondas{
+    display: inline-block;
+    padding: 2%;
+    margin: 33px;
+    transition: 400ms;
+    border-radius: 20px;
+    background-color: teal;
+    width: 23%;
+    height: 100%;
+}
+.ondas-titulo{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-family: "Aller-bold";
+}
+.ondas > img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ondas:hover{
+    border-radius: 20px;
+    background: #d3d3d3;
+    color: black;
+    transform: scale(1.1);
+    transition: 200ms;
+}
+.ondas-p{
+    display: block;
+    text-align: center;
+    font-family: "Aller-regular";
+}
+.gente{
+    width: 23%;
+    height: 100%;
+    display: inline-block;
+    padding: 2%;
+    margin: 33px;
+    transition: 400ms;
+    border-radius: 20px;
+    background-color: teal;
+}
+.gente-titulo{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-family: "Aller-bold";
+}
+.gente > img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gente:hover{
+    border-radius: 20px;
+    background: #d3d3d3;
+    color: black;
+    transform: scale(1.1);
+    transition: 200ms;
+}
+.gente-p{
+    display: block;
+    text-align: center;
+    font-family: "Aller-regular";
+}
+.titulo-construcao{
+    width: 50%;
+    margin: 0 auto;
 }
 
-.parte-2-grupo2>div>h2{
+.titulo-construcao > h2{
     font-family: "Aller-bold";
     font-size: 30px;
     padding: 15px;
     color: white;
+    text-align: center;
 }
 
-.parte-2-grupo2>div>p{
+.titulo-construcao > p{
+    font-family: "Aller-regular";
+    font-size: 25px;
+    margin: 1px;
+    color: white;
+    text-align: center;
+}
+.texto-imagem{
+    display: flex;
+    width: 90vw;
+    margin: 0px auto;
+}
+.texto-construcao{
+    color: white;
+    padding: 50px;
+    width: 50%;
+    display: inline-block;
+}
+.texto-construcao > p{
+    font-family: "Aller-regular";
+    font-size: 25px;
+    margin: 15px;
+}
+.logo-const{
+    padding: 50px;
+    width: 50%;
+    display: inline-block;
+    margin: 15px;
+}
+.texto-construcao{
     font-family: "Aller-regular";
     font-size: 25px;
     margin: 10px;
     color: white;
 }
-
-.logo-grid{
-    display: inline-block;
-    padding: 0 0 0 100px;
-    width: 600px
-}
-
 .parte-2-grupo3{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .parte-2-grupo3>div{
@@ -448,6 +589,7 @@
     padding: 15px;
     height: 100%;
     color: white;
+    margin-block-end: 10%;
 }
 
 .parte-2-grupo3>div>p{
@@ -460,21 +602,28 @@
 }
 
 .variacoes-marca{
-    display: inline-block;
-    padding: 0 0 0 100px;
-    width: 600px
-
+    display: block;
+    width: 576px;
+}
+.simbolos-grid{
+    width: 576px;
+}
+.imagens-variacoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .parte-2-grupo4{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .parte-2-grupo4>div{
     display: inline-block;
     width: 50%;
     padding: 50px;
+
 }
 
 .parte-2-grupo4>div>h2{
@@ -483,6 +632,7 @@
     padding: 15px;
     height: 100%;
     color: white;
+    margin-block-end: 10%;
 }
 
 .parte-2-grupo4>div>p{
@@ -493,16 +643,23 @@
     height: 100%;
     color: white;
 }
-
+.protecao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 576px;
+}
 .area-de-protecao{
-    display: inline-block;
-    padding: 70px 0 70px 170px;
-    width: 500px
+    display: block;
+    width: 500px;
+    margin-block-end: 10px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .parte-2-grupo5{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .parte-2-grupo5>div{
@@ -517,6 +674,7 @@
     padding: 15px;
     height: 100%;
     color: white;
+    margin-block-end: 10%
 }
 
 .parte-2-grupo5>div>p{
@@ -527,11 +685,18 @@
     height: 100%;
     color: white;
 }
+.imagem-reducao{
+    width: 50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
 
 .limite-reducao{
-    display: inline-block;
-    padding: 70px 0 70px 170px;
-    width: 500px
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* css da parte 2 */
@@ -539,7 +704,7 @@
 /* css da parte 3 */
 
 .parte-3{
-    background: linear-gradient(135deg, #8e186e, #ff7376);
+    background: linear-gradient(180deg, #8360c8, #8e186e);
     padding-top: var(--padding-padrao);
     padding-bottom: var(--padding-padrao); 
 }
@@ -548,8 +713,7 @@
     width: 90vw;
     height: 500px;
     margin: 0 auto;
-    border: 5px solid white;
-    background-image: url(./assets/images/ondas\ com\ fundo\ transparente.png);
+    /* background-image: url(./assets/images/ondas\ com\ fundo\ transparente.png); */
 
 }
 .elementos{
@@ -571,7 +735,6 @@
     margin: 40px auto;
 }
 .tipografia, .exemplo-tipografia{
-    border: 5px solid white;
     color: white;
     padding: 50px;
     width: 50%;
@@ -629,7 +792,6 @@
     display: flex;
     width: 90vw;
     margin: 0 auto;
-    border: 5px solid white;
 
 }
 .texto-grafismos, .exemplos-grafismos{
