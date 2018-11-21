@@ -929,6 +929,78 @@
 /* css da parte 5 */
 
 
+.coluna-1-parte1{
+    padding-left: 120px;
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.botao-scripts{
+    display: block;
+    border: 3px white solid;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background: none;
+    font-family: Aller-regular;
+    font-size: 20px;  
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+}
+.botao-scripts:hover{
+    transition: 200ms;
+    font-size: 17px;    
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.botao-pedidos{
+    display: block;
+    border: 3px white solid;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background: none;
+    font-family: Aller-regular;
+    font-size: 20px;  
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+}
+.botao-pedidos:hover{
+    transition: 200ms;
+    font-size: 17px;    
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+    cursor: pointer;
 
+}
+.botao-dev{
+    display: block;
+    border: 3px white solid;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background: none;
+    font-family: Aller-regular;
+    font-size: 20px;  
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+}
+.botao-dev:hover{
+    transition: 200ms;
+    font-size: 17px;    
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+    cursor: pointer;
 
+}
